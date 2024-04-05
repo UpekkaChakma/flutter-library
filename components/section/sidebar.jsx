@@ -41,20 +41,22 @@ const SidebarMobile = () => {
   const { sidebarOpen, toggleSidebar } = useContext(Context);
 
   return (
-    <div
-      className={cn(
-        "fixed inset-0 block md:hidden -translate-x-full transition-transform",
-        {
-          "translate-x-0": sidebarOpen === true,
-        }
-      )}
-    >
-      <div className="relative w-full h-full">
-        <div
-          onClick={toggleSidebar}
-          className="absolute inset-0 bg-gray-100 bg-opacity-70 z-10"
-        ></div>
-        <div className="absolute top-0 left-0 h-screen w-52 px-3 md:px-0 flex flex-col gap-[10px] bg-white z-20">
+    <div>
+      <div
+        onClick={toggleSidebar}
+        className={cn("fixed inset-0 bg-transparent pointer-events-none z-10", {
+          "bg-gray-100 bg-opacity-70 pointer-events-auto": sidebarOpen === true,
+        })}
+      ></div>
+      <div
+        className={cn(
+          "fixed top-0 left-0 bottom-0 w-52 block md:hidden px-3 md:px-0 -translate-x-full transition-transform bg-white",
+          {
+            "translate-x-0 z-50": sidebarOpen === true,
+          }
+        )}
+      >
+        <div className="relative w-full h-full flex flex-col gap-[10px] z-20">
           <div className="flex justify-end px-x pt-3 pb-4">
             <Button
               buttonType="light"

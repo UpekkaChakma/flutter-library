@@ -10,6 +10,5 @@ button,
 button:focus,
 button:active {
   outline: none;
-  background: transparent;
   border: 1px solid transparent;
 }

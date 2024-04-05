@@ -10,7 +10,7 @@ const ContextProvider = ({ children }) => {
   const [selected, setSelected] = useState(SIDE_MENU_ITEMS[0].title);
 
   const toggleSidebar = () => {
-    setSidebarOpen((prev) => !prev);
+    setSidebarOpen((prevState) => !prevState);
   };
 
   return (

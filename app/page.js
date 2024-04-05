@@ -17,7 +17,7 @@ export default function Home() {
   if (TEMPLATES.length <= 0) return null;
 
   return (
-    <main className="md:ml-[155px] px-9 lg:px-4">
+    <main className="md:ml-[155px] px-6 lg:px-4">
       <Heading heading={PAGE_HEADING} />
       <Templates templates={TEMPLATES} />
       <Articles articles={ARTICLES} />

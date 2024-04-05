@@ -8,7 +8,7 @@ const Footer = () => {
   const { logo, about, socialIcons, navLink1, navLink2, copyright, privacy } =
     FOOTER;
   return (
-    <footer className="mt-14 md:mt-9 md:ml-[155px] px-9 lg:px-4">
+    <footer className="mt-14 md:mt-9 md:ml-[155px] px-6 lg:px-4">
       <div className="flex flex-col lg:flex-row justify-between gap-8">
         <About logo={logo} about={about} icons={socialIcons} />
         <Navigation navLink1={navLink1} navLink2={navLink2} />
