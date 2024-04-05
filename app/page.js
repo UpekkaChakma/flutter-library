@@ -45,7 +45,7 @@ const Heading = ({ heading }) => {
 
 const Templates = ({ templates }) => {
   return (
-    <div className="w-full mt-8 md:mt-6">
+    <div className="w-full mt-10 md:mt-6">
       <SectionHeadingWithButton title="Templates" />
       <div className="grid grid-cols-12 gap-5">
         {templates.map((item, index) => (
@@ -60,7 +60,7 @@ const Templates = ({ templates }) => {
 
 const Articles = ({ articles }) => {
   return (
-    <div className="w-full mt-9 md:mt-4">
+    <div className="w-full mt-10 md:mt-4">
       <SectionHeadingWithButton title="Articles" />
       <div className="grid grid-cols-12 gap-5 place-items-center">
         {articles.map((item, index) => (
